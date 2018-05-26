@@ -1,0 +1,9 @@
+提升权限的命令：su/sudo
+su:switch user，可以切换到root用户并且执行命令
+sudo:superuser do，可以通过文件/etc/sudoers
+      添加以下行允许用户N412有sudo 权限：
+      N412 ALL=(ALL) ALL
+      *第一个ALL指示允许从任何终端、机器访问sudo
+      *第二个（ALL）指示sudo命令被允许以任何用户身份执行
+      *第三个ALL表示所有命令都以作为root执行
+sudo可以执行多个命令，只需要用；隔开命令
